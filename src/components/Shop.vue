@@ -74,13 +74,15 @@ export default {
 <style lang="scss" scoped>
 .shop {
   display: flex;
+  margin: auto;
+  max-width: 1700px;
+  background-color: #76767620;
 
   .class {
     width: 20%;
     // min-width: 100px;
     li {
       text-align: center;
-      background-color: #c7d8c6;
       margin: 15px 0;
       padding: 5px;
       box-shadow: 0 0 3px black;
