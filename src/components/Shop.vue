@@ -121,6 +121,8 @@ export default {
       overflow: auto;
       width: 80%;
       height: 80%;
+      max-width: 1000px;
+      max-height: 800px;
       padding: 10px;
       display: flex;
       align-items: stretch;
@@ -130,6 +132,7 @@ export default {
       img {
         padding: 10px;
         width: 50%;
+        height: auto;
         object-fit: contain;
       }
       .title {
@@ -139,7 +142,7 @@ export default {
         flex-direction: column;
         justify-content: center;
       }
-      @media only screen and (max-width: 540px) {
+      @media only screen and (max-width: 700px) {
         img,
         .title {
           width: 100%;
@@ -150,7 +153,7 @@ export default {
 }
 .mask-enter-active,
 .mask-leave-active {
-  transition: opacity .5s;
+  transition: opacity 0.5s;
 }
 .mask-enter-from,
 .mask-leave-to {
