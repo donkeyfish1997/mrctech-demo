@@ -1,26 +1,26 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-</template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import search from "@/components/Search.vue";
+import banner from "@/components/Banner.vue";
+import timer from "@/components/Timer.vue";
+import shop from "@/components/Shop.vue";
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  components: { search, banner, timer, shop },
+};
 </script>
+<template>
+  <search />
+  <banner />
+  <timer />
+  <shop />
+</template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  box-sizing:border-box;
+}
+ul {
+  list-style: none;
+  padding: 0;
 }
 </style>
