@@ -76,7 +76,6 @@ export default {
   display: flex;
   margin: auto;
   max-width: 1700px;
-  background-color: #76767620;
 
   .class {
     width: 20%;
